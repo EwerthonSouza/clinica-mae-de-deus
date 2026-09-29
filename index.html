@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Clínica Mãe de Deus · Saúde em todas as fases</title>
+  <meta name="description" content="Clínica Mãe de Deus: tecnologia, equipe qualificada e acolhimento para cuidar de você em todas as fases da vida." />
+  <meta name="theme-color" content="#FAF8F3" />
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <button class="icon-btn back-btn" id="backBtn" aria-label="Voltar" hidden>
+        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <a href="#/" class="brand" aria-label="Página inicial" id="brandLink">
+        <img src="/img/logo.svg" alt="" class="brand__logo" id="brandLogo" data-edit-media="settings.logo" />
+        <span class="brand__text">
+          <strong class="brand__name" data-bind="settings.clinicName" data-edit="settings.clinicName">Mãe de Deus</strong>
+          <small class="brand__tag" data-bind="settings.tagline" data-edit="settings.tagline">Clínica · Saúde em todas as fases</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" id="desktopNav" aria-label="Principal"></nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span class="menu-btn__label">Menu</span>
+        <svg viewBox="0 0 24 24"><path d="M6 9h12M6 15h12"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="page" tabindex="-1"></main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Navegação"></nav>
+
+  <div class="drawer" id="drawer" hidden>
+    <div class="drawer__backdrop" data-close></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu">
+      <div class="drawer__head">
+        <span class="eyebrow">Menu</span>
+        <button class="icon-btn" data-close aria-label="Fechar menu">
+          <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="drawer__links" id="drawerLinks"></nav>
+      <a class="btn btn--primary" id="drawerWhats" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+    </aside>
+  </div>
+
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet__backdrop" data-close></div>
+    <div class="sheet__panel" role="dialog" aria-modal="true">
+      <button class="icon-btn sheet__close" data-close aria-label="Fechar">
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div id="sheetBody"></div>
+    </div>
+  </div>
+
+  <div class="editbar" id="editBar" hidden>
+    <button class="editbar__btn" id="editMsgsBtn" type="button" aria-label="Mensagens recebidas">✉️<span class="editbar__count" id="editMsgsCount" hidden>0</span></button>
+    <button class="editbar__btn" id="editPassBtn" type="button" aria-label="Alterar senha">🔑</button>
+    <button class="editbar__btn editbar__btn--main" id="editToggleBtn" type="button">✏️ <span>Editar página</span></button>
+    <button class="editbar__btn" id="editLogoutBtn" type="button" aria-label="Sair">⏻</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <div class="cookiebar" id="cookieBar" hidden role="dialog" aria-label="Aviso de cookies">
+    <p id="cookieBarText"></p>
+    <div class="cookiebar__actions">
+      <a href="https://www.gov.br/mds/pt-br/acesso-a-informacao/governanca/integridade/campanhas/lgpd" target="_blank" rel="noopener" id="cookieBarLink">Saiba mais</a>
+      <button type="button" class="btn btn--primary" id="cookieBarBtn">Entendi</button>
+    </div>
+  </div>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

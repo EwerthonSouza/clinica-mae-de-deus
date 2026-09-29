@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Entrar · Clínica Mãe de Deus</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/admin/admin.css" />
+</head>
+<body>
+  <section class="login" id="loginView" hidden>
+    <form class="login__card" id="loginForm">
+      <img src="/img/logo.svg" alt="" class="login__logo" />
+      <span class="eyebrow">Área restrita</span>
+      <h1>Painel <em>administrativo</em></h1>
+      <p class="muted">Entre para editar textos, fotos e vídeos direto no site.</p>
+      <label class="label" for="user">Usuário</label>
+      <input class="input" id="user" name="username" autocomplete="username" required />
+      <label class="label" for="pass">Senha</label>
+      <input class="input" id="pass" name="password" type="password" autocomplete="current-password" required />
+      <button class="btn btn--primary" type="submit">Entrar</button>
+      <p class="error" id="loginError" role="alert"></p>
+      <a href="/" class="muted small">← Voltar ao site</a>
+    </form>
+  </section>
+
+  <script src="/admin/admin.js" defer></script>
+</body>
+</html>

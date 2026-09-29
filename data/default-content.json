@@ -1,0 +1,226 @@
+{
+  "settings": {
+    "clinicName": "Mãe de Deus",
+    "tagline": "Clínica · Saúde em todas as fases",
+    "whatsapp": "(95) 98119-1620",
+    "whatsappMessage": "Olá! Gostaria de agendar uma consulta.",
+    "phone": "(95) 3224-0325",
+    "email": "contato@clinica.com.br",
+    "instagram": "clinicamaededeusrr",
+    "logo": "/img/logo.svg",
+    "footerText": "Todos os direitos reservados"
+  },
+  "home": {
+    "eyebrow": "Bem-vindo(a)",
+    "title": "Cuidar de você é a nossa",
+    "titleHighlight": "especialidade.",
+    "text": "Na Clínica Mãe de Deus, unimos tecnologia, equipe qualificada e acolhimento para oferecer um atendimento completo em todas as fases da sua vida.",
+    "heroMedia": "/img/placeholder-hero.svg",
+    "heroGallery": [],
+    "heroBadge": "Atendimento humanizado",
+    "ctaPrimary": "Agendar pelo WhatsApp",
+    "ctaSecondary": "Conheça nossa clínica",
+    "phasesTitle": "Aqui, sua saúde importa",
+    "phases": [
+      "Infância",
+      "Vida adulta",
+      "Terceira idade"
+    ],
+    "phasesDescriptions": [
+      "Acompanhamento do crescimento, vacinação e consultas pediátricas para começar bem a vida.",
+      "Check-ups, saúde da mulher e do homem, e cuidados preventivos para o dia a dia.",
+      "Atenção especial à mobilidade, cuidados crônicos e qualidade de vida na melhor idade."
+    ],
+    "phasesText": "Cuidados em todas as fases da vida — da infância à terceira idade, sempre ao seu lado.",
+    "hoursTitle": "Horário de funcionamento",
+    "hours": [
+      "Atendimento 24 horas"
+    ]
+  },
+  "about": {
+    "eyebrow": "Sobre nós",
+    "title": "Mais que atendimento,",
+    "titleHighlight": "acolhimento.",
+    "text": "Na Clínica Mãe de Deus, unimos tecnologia, equipe qualificada e acolhimento para oferecer um atendimento completo em todas as fases da sua vida.",
+    "gallery": [
+      {
+        "src": "/img/placeholder-person.svg",
+        "caption": ""
+      },
+      {
+        "src": "/img/placeholder-person.svg",
+        "caption": ""
+      },
+      {
+        "src": "/img/placeholder-person.svg",
+        "caption": ""
+      },
+      {
+        "src": "/img/placeholder-person.svg",
+        "caption": ""
+      },
+      {
+        "src": "/img/placeholder-person.svg",
+        "caption": ""
+      },
+      {
+        "src": "/img/placeholder-person.svg",
+        "caption": ""
+      }
+    ],
+    "galleryBadge": "Nossa equipe",
+    "historyTitle": "Nossa história",
+    "historyText": "[Conte aqui como a clínica nasceu, há quanto tempo atende a comunidade e o que a motiva a cuidar das pessoas.]",
+    "missionEyebrow": "Nossa missão",
+    "missionTitle": "Saúde que caminha com você.",
+    "missionText": "Oferecer um atendimento de qualidade, com ética, respeito e humanização, contribuindo para o bem-estar e a saúde da nossa comunidade."
+  },
+  "specialties": [
+    "Clínico Geral",
+    "Cardiologia",
+    "Pediatria",
+    "Dermatologia"
+  ],
+  "specialists": [
+    {
+      "id": "e1",
+      "name": "[Nome do(a) profissional]",
+      "specialty": "Clínico Geral",
+      "crm": "CRM [00000]",
+      "photo": "/img/placeholder-person.svg",
+      "bio": "[Breve apresentação do(a) profissional, formação e áreas de atuação.]"
+    },
+    {
+      "id": "e2",
+      "name": "[Nome do(a) profissional]",
+      "specialty": "Cardiologia",
+      "crm": "CRM [00000]",
+      "photo": "/img/placeholder-person.svg",
+      "bio": "[Breve apresentação do(a) profissional, formação e áreas de atuação.]"
+    },
+    {
+      "id": "e3",
+      "name": "[Nome do(a) profissional]",
+      "specialty": "Pediatria",
+      "crm": "CRM [00000]",
+      "photo": "/img/placeholder-person.svg",
+      "bio": "[Breve apresentação do(a) profissional, formação e áreas de atuação.]"
+    },
+    {
+      "id": "e4",
+      "name": "[Nome do(a) profissional]",
+      "specialty": "Dermatologia",
+      "crm": "CRM [00000]",
+      "photo": "/img/placeholder-person.svg",
+      "bio": "[Breve apresentação do(a) profissional, formação e áreas de atuação.]"
+    }
+  ],
+  "insurance": {
+    "eyebrow": "Planos aceitos",
+    "title": "Convênios",
+    "text": "Confira os planos de saúde aceitos pela Clínica Mãe de Deus.",
+    "notice": "A cobertura pode variar conforme o plano e a especialidade. Confirme com nossa equipe antes da consulta.",
+    "items": [
+      {
+        "id": "c1",
+        "name": "[Convênio 1]",
+        "logo": ""
+      },
+      {
+        "id": "c2",
+        "name": "[Convênio 2]",
+        "logo": ""
+      },
+      {
+        "id": "c3",
+        "name": "[Convênio 3]",
+        "logo": ""
+      },
+      {
+        "id": "c4",
+        "name": "[Convênio 4]",
+        "logo": ""
+      },
+      {
+        "id": "c5",
+        "name": "[Convênio 5]",
+        "logo": ""
+      },
+      {
+        "id": "c6",
+        "name": "[Convênio 6]",
+        "logo": ""
+      },
+      {
+        "id": "c7",
+        "name": "[Convênio 7]",
+        "logo": ""
+      },
+      {
+        "id": "c8",
+        "name": "[Convênio 8]",
+        "logo": ""
+      }
+    ]
+  },
+  "blog": {
+    "eyebrow": "Conteúdos de saúde",
+    "title": "Blog da",
+    "titleHighlight": "clínica",
+    "text": "Dicas e informações da nossa equipe para cuidar de você em todas as fases da vida.",
+    "posts": [
+      {
+        "id": "p1",
+        "title": "[Título do artigo em destaque]",
+        "summary": "[Resumo do artigo em até duas linhas, apresentando o assunto para o leitor.]",
+        "content": "[Texto completo do artigo.]",
+        "category": "Cardiologia",
+        "image": "/img/placeholder-person.svg",
+        "video": "",
+        "date": "2026-09-28",
+        "readTime": 5,
+        "featured": true
+      },
+      {
+        "id": "p2",
+        "title": "[Título do artigo]",
+        "summary": "[Resumo do artigo.]",
+        "content": "[Texto completo do artigo.]",
+        "category": "Pediatria",
+        "image": "/img/placeholder-person.svg",
+        "video": "",
+        "date": "2026-09-20",
+        "readTime": 4,
+        "featured": false
+      },
+      {
+        "id": "p3",
+        "title": "[Título do artigo]",
+        "summary": "[Resumo do artigo.]",
+        "content": "[Texto completo do artigo.]",
+        "category": "Clínico Geral",
+        "image": "/img/placeholder-person.svg",
+        "video": "",
+        "date": "2026-09-12",
+        "readTime": 3,
+        "featured": false
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Fale conosco",
+    "title": "Estamos aqui",
+    "titleHighlight": "por você",
+    "text": "Tire suas dúvidas, agende sua consulta ou fale com a nossa equipe pelo canal que preferir.",
+    "formTitle": "Envie uma mensagem",
+    "formText": "Preencha os dados e nossa equipe retorna o contato."
+  },
+  "media": [],
+  "privacy": {
+    "title": "Política de Cookies (LGPD — Lei nº 13.709/2018)",
+    "updatedAt": "28/09/2026",
+    "bannerText": "Este site utiliza cookies apenas para o seu funcionamento, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).",
+    "bannerButton": "Entendi",
+    "content": "Este site está em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD — Lei nº 13.709/2018) no que diz respeito ao uso de cookies.\n\nUtilizamos apenas cookies estritamente necessários para o funcionamento do site. Não utilizamos cookies de rastreamento, análise de comportamento ou publicidade de terceiros.\n\nVocê pode limpar os cookies do seu navegador a qualquer momento nas configurações do próprio aparelho."
+  }
+}

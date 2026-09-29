@@ -1,0 +1,9 @@
+# Bloqueia qualquer acesso direto pelo navegador a esta pasta.
+# Os dados (content.json, users.json, mensagens) só devem ser lidos pelos scripts PHP.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order deny,allow
+  Deny from all
+</IfModule>

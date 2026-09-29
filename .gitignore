@@ -1,0 +1,9 @@
+.DS_Store
+
+# Dados reais do site (textos editados, usuário/senha, mensagens) — não versionar
+storage/*
+!storage/.htaccess
+
+# Fotos e vídeos enviados pelo painel — não versionar
+uploads/*
+!uploads/.gitkeep
