@@ -651,8 +651,9 @@ textarea.input { height: 110px; padding: 12px 14px; resize: vertical; }
   display: flex;
   flex-direction: column;
   gap: 18px;
-  animation: slideIn 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+  animation: slideIn 0.55s cubic-bezier(0.32, 0.72, 0, 1);
 }
+.drawer .drawer__backdrop { animation-duration: 0.4s; }
 @keyframes slideIn { from { transform: translateX(100%); } }
 @keyframes slideOut { to { transform: translateX(100%); } }
 @keyframes fadeOut { to { opacity: 0; } }
@@ -665,20 +666,29 @@ textarea.input { height: 110px; padding: 12px 14px; resize: vertical; }
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--serif);
-  font-size: 18px;
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 15px;
   color: var(--text);
   padding: 12px 12px;
   border-radius: 14px;
   transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  animation: drawerItemIn 0.55s ease backwards;
 }
+@keyframes drawerItemIn { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: none; } }
+.drawer__links a:nth-child(1) { animation-delay: 0.12s; }
+.drawer__links a:nth-child(2) { animation-delay: 0.24s; }
+.drawer__links a:nth-child(3) { animation-delay: 0.36s; }
+.drawer__links a:nth-child(4) { animation-delay: 0.48s; }
+.drawer__links a:nth-child(5) { animation-delay: 0.6s; }
+.drawer__links a:nth-child(6) { animation-delay: 0.72s; }
 .drawer__links a .ico { background: var(--mint-2); flex: none; }
 .drawer__label { flex: 1; }
 .drawer__links a > svg { width: 16px; height: 16px; margin-left: auto; opacity: 0; transform: translateX(-4px); transition: opacity 0.2s ease, transform 0.2s ease; color: var(--green-600); }
 .drawer__links a:hover { background: var(--mint); }
 .drawer__links a:hover > svg { opacity: 1; transform: none; }
 .drawer__links a:active { transform: scale(0.98); }
-.drawer__links a[aria-current='page'] { background: var(--green-900); color: #fff; font-style: italic; }
+.drawer__links a[aria-current='page'] { background: var(--green-900); color: #fff; }
 .drawer__links a[aria-current='page'] .ico { background: rgba(255, 255, 255, 0.16); color: #fff; }
 .drawer__links a[aria-current='page'] > svg { opacity: 1; transform: none; color: #fff; }
 
