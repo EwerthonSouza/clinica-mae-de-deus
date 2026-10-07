@@ -87,8 +87,8 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .back-btn { margin-left: -8px; }
 
 .brand { display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1; }
-.brand__logo { width: 32px; height: 32px; flex: none; object-fit: contain; }
-.brand__text { display: flex; flex-direction: column; min-width: 0; line-height: 1.1; }
+.brand__logo { width: 60px; height: 60px; flex: none; object-fit: contain; transform: scale(2.6); margin-left: 20px; }
+.brand__text { display: none; }
 .brand__name { font-family: var(--serif); font-weight: 400; font-size: 17px; color: var(--green-900); }
 .brand__tag {
   font-size: 7.5px;
@@ -113,11 +113,10 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
   font-weight: 600;
   font-size: 14px;
   flex: none;
+  margin-right: -8px;
 }
 .menu-btn svg { width: 20px; height: 20px; }
 .menu-btn__label { display: none; }
-body.is-home .menu-btn { padding: 0 12px; }
-body.is-home .menu-btn__label { display: inline; }
 
 .desktop-nav { display: none; }
 
@@ -341,20 +340,7 @@ body.is-home .menu-btn__label { display: inline; }
   box-shadow: 0 0 0 5px rgba(63, 143, 79, 0.22);
   transform: scale(1.16);
 }
-.phase[aria-pressed='true']::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 50%;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--green-600);
-  transform: translateX(-50%);
-  animation: phaseDot 0.25s ease;
-}
 @keyframes phasePop { 0% { transform: scale(1); } 40% { transform: scale(1.06); } 100% { transform: scale(1); } }
-@keyframes phaseDot { from { opacity: 0; transform: translateX(-50%) scale(0.4); } to { opacity: 1; transform: translateX(-50%) scale(1); } }
 .card-mint p {
   margin: 0;
   color: var(--muted);
@@ -733,7 +719,7 @@ textarea.input { height: 110px; padding: 12px 14px; resize: vertical; }
 @media (min-width: 1000px) {
   .tabbar { display: none; }
   .page { padding-bottom: 60px; }
-  .brand__logo { width: 40px; height: 40px; }
+  .brand__logo { width: 68px; height: 68px; }
   .brand__name { font-size: 21px; }
   .brand__tag { font-size: 9px; }
   .desktop-nav { display: flex; gap: 4px; }

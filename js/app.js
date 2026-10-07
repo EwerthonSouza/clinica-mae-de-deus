@@ -16,6 +16,26 @@
     heart: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
     whats:
       '<path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.5z"/><path d="M9 8.5c0 3.5 2.8 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 0 1-2.6-2.6l.9-1-1-2z"/>',
+    baby: '<circle cx="12" cy="7" r="3.2"/><path d="M6.5 20c0-3.6 2.4-6.2 5.5-6.2s5.5 2.6 5.5 6.2"/>',
+    drop: '<path d="M12 3.5c3.6 4.4 5.5 7.6 5.5 10.3a5.5 5.5 0 0 1-11 0c0-2.7 1.9-5.9 5.5-10.3z"/>',
+    bone: '<circle cx="6" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8 8l8 8"/>',
+    brain:
+      '<path d="M9 4.5a2.6 2.6 0 0 0-2.6 2.6c0 .3 0 .6.1.9A2.8 2.8 0 0 0 5 10.7 2.8 2.8 0 0 0 6.6 13a2.8 2.8 0 0 0 2.6 3.9M9 4.5c1.2 0 2.2.6 2.8 1.5M9 4.5v12.4M15 4.5a2.6 2.6 0 0 1 2.6 2.6c0 .3 0 .6-.1.9A2.8 2.8 0 0 1 19 10.7 2.8 2.8 0 0 1 17.4 13a2.8 2.8 0 0 1-2.6 3.9M15 4.5c-1.2 0-2.2.6-2.8 1.5"/>',
+    chat: '<path d="M4 5h16v10H9l-4 4V5z"/>',
+    eye: '<path d="M2.5 12S6 6 12 6s9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6z"/><circle cx="12" cy="12" r="2.6"/>',
+    ear: '<path d="M14 3a6.5 6.5 0 0 0-6.5 6.5v4a3.5 3.5 0 0 0 7 0"/><path d="M14 3a6.5 6.5 0 0 1 6.5 6.5c0 3-2 4-2 6.5a2.5 2.5 0 0 1-5 0"/>',
+    tooth:
+      '<path d="M12 3.5c2.6 0 4.8 1.7 4.8 4.4 0 2.6-.8 3.6-.8 6.3 0 2.6-.8 4.3-1.7 4.3-1 0-1-2-1.4-4.4-.3 2.4-.4 4.4-1.4 4.4-.9 0-1.7-1.7-1.7-4.3 0-2.7-.8-3.7-.8-6.3 0-2.7 2.2-4.4 4.8-4.4z"/>',
+    salad: '<path d="M4 12h16a8 8 0 0 1-16 0z"/><path d="M12 12V5M9 7 8 4M15 7l1-3"/>',
+    leg: '<path d="M9.5 3.5h4v7.5l3 4.3v5.2h-4v-4.7l-3-4.3V3.5z"/>',
+    ribbon: '<path d="M9 3.5 12 8l3-4.5M12 8v4.2M9 20.5c0-3 1-5 3-6 2 1 3 3 3 6"/>',
+    lungs:
+      '<path d="M12 3v6.5M9 9.5c-3 0-4.3 2.8-4.3 5.8 0 2.6.9 4.7 2.6 4.7 1.6 0 2.2-2.4 2.2-4.4V9.5zM15 9.5c3 0 4.3 2.8 4.3 5.8 0 2.6-.9 4.7-2.6 4.7-1.6 0-2.2-2.4-2.2-4.4V9.5z"/>',
+    germ: '<circle cx="12" cy="12" r="4.5"/><path d="M12 3v2.3M12 18.7V21M3 12h2.3M18.7 12H21M6 6l1.6 1.6M16.4 16.4 18 18M6 18l1.6-1.6M16.4 7.6 18 6"/>',
+    kidney:
+      '<path d="M9.2 3.5C6 3.5 4 6.8 4 10.5c0 5 2.2 8 5.3 8 2.1 0 2.1-2.2 3.1-2.2s1 2.2 3.1 2.2c3.1 0 5.3-3 5.3-8 0-3.7-2-7-5.2-7-2.1 0-2.1 2.3-3.2 2.3s-1.1-2.3-3.2-2.3z"/>',
+    belly:
+      '<path d="M9 3.5a3 3 0 0 0-3 3v2a7 7 0 0 0 3 12.3 3 3 0 0 0 3-3v-1a5 5 0 0 1-3-9V6.5a3 3 0 0 1 3-3"/>',
   };
   const icon = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[name] || ''}</svg>`;
 
@@ -83,6 +103,41 @@
       .map((c) => `<button class="chip" data-filter="${key}" data-value="${esc(c)}" aria-pressed="${c === active}">${esc(c)}</button>`)
       .join('')}</div>`;
   }
+  function specialtyIcon(name) {
+    const s = String(name || '').toLowerCase();
+    const map = [
+      [['cardio'], 'heart'],
+      [['pediatr'], 'baby'],
+      [['dermatolog'], 'drop'],
+      [['gineco', 'obstetr'], 'belly'],
+      [['ortoped'], 'bone'],
+      [['reumatolog'], 'bone'],
+      [['neurolog'], 'brain'],
+      [['psiquiatr'], 'brain'],
+      [['psicolog'], 'chat'],
+      [['oftalmolog'], 'eye'],
+      [['otorrino'], 'ear'],
+      [['odont', 'dentist'], 'tooth'],
+      [['endocrin'], 'drop'],
+      [['urolog'], 'kidney'],
+      [['nutrolog', 'nutri'], 'salad'],
+      [['fisioterap'], 'leg'],
+      [['oncolog', 'mastolog'], 'ribbon'],
+      [['gastro'], 'salad'],
+      [['pneumo'], 'lungs'],
+      [['infectolog'], 'germ'],
+      [['alergi', 'imunolog'], 'germ'],
+      [['geriatr'], 'heart'],
+      [['vascular', 'angiolog'], 'drop'],
+      [['nefrolog'], 'kidney'],
+      [['geral'], 'steth'],
+    ];
+    for (const [keys, key] of map) {
+      if (keys.some((k) => s.includes(k))) return key;
+    }
+    return 'steth';
+  }
+
   const footer = () =>
     `<footer class="footer">© ${new Date().getFullYear()} Clínica ${esc(C.settings.clinicName)} · <span data-edit="settings.footerText">${esc(
       C.settings.footerText || 'Todos os direitos reservados'
@@ -492,7 +547,7 @@
         specs.length
           ? `<section class="section">
         <div class="section-head"><h2 class="h2">Especialidades</h2><a class="link-arrow" href="#/especialistas">Ver equipe ${icon('arrow')}</a></div>
-        <div class="spec-grid">${specs.map((s) => `<a class="spec-tile" href="#/especialistas?f=${encodeURIComponent(s)}"><span class="ico">${icon('heart')}</span>${esc(s)}</a>`).join('')}</div>
+        <div class="spec-grid">${specs.map((s) => `<a class="spec-tile" href="#/especialistas?f=${encodeURIComponent(s)}"><span class="ico">${icon(specialtyIcon(s))}</span>${esc(s)}</a>`).join('')}</div>
       </section>`
           : ''
       }
@@ -963,7 +1018,6 @@
     }
     app.innerHTML = pages[r.key](r.arg);
     document.body.classList.toggle('is-home', r.key === '/');
-    $('#backBtn').hidden = r.key === '/';
     document.querySelectorAll('[data-route]').forEach((a) => {
       if (a.dataset.route === r.base) a.setAttribute('aria-current', 'page');
       else a.removeAttribute('aria-current');
