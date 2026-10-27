@@ -34,4 +34,7 @@ Options -Indexes
   <FilesMatch "\.(css|js|svg|jpg|jpeg|png|webp|gif|mp4|webm|mov)$">
     Header set Cache-Control "public, max-age=2592000"
   </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
 </IfModule>

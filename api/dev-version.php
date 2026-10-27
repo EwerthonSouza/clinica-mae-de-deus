@@ -18,14 +18,21 @@ $css = $mtime('/css/style.css');
 $adminCss = $mtime('/admin/admin.css');
 
 $appWatch = [
-  '/index.html',
   '/js/app.js',
-  '/admin/index.html',
   '/admin/admin.js',
+  '/storage/content.json',
 ];
 $app = 0;
 foreach ($appWatch as $rel) {
   $app = max($app, $mtime($rel));
+}
+
+$imgDir = $root . '/img';
+if (is_dir($imgDir)) {
+  $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($imgDir, FilesystemIterator::SKIP_DOTS));
+  foreach ($it as $file) {
+    $app = max($app, $file->getMTime());
+  }
 }
 
 echo json_encode(['css' => max($css, $adminCss), 'app' => $app]);
