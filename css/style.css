@@ -449,7 +449,7 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 18px;
-  height: 108px;
+  height: 156px;
   box-shadow: 0 4px 16px rgba(15, 76, 58, 0.06);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -465,7 +465,7 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
   color: var(--green-900);
   font-size: 22px;
   overflow: hidden;
-  padding: 10px;
+  padding: 14px;
 }
 .ins-card__logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .ins-card__name { display: none; }
